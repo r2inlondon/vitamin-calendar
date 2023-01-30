@@ -2,8 +2,8 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import "./App.css";
-import { useState, useEffect, Fragment } from "react";
-import myEvents from "./eventsSeed";
+import { useState, Fragment } from "react";
+// import myEvents from "./eventsSeed";
 import CalendarForm from "./CalendarForm";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
           slotMaxTime={"18:00"}
           height="100%"
           duration={"01:00"}
+          weekends={false}
         />
       </div>
       <CalendarForm

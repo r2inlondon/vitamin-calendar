@@ -4,5 +4,45 @@
 
 .calendar-container {
   margin: 40px;
-  height: 600px;
+  height: 580px;
+}
+
+.form-container {
+  margin: auto;
+  width: 400px;
+}
+
+label {
+  font-size: large;
+  margin-top: 40px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: rgb(88, 88, 88);
+  font-size: medium;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4486db;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e75e7;
 }

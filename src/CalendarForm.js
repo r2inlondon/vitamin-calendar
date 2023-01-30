@@ -12,7 +12,8 @@ const CalendarForm = ({ calendarEvents, setCalendarEvents }) => {
     const totalHours = [];
 
     for (let i = 0; i < hours; i++) {
-      const hour = (hours + i).toString();
+      const hour = (hours + i).toString() + ":00";
+
       const element = (
         <option key={hour} value={hour}>
           {hour}
@@ -37,8 +38,6 @@ const CalendarForm = ({ calendarEvents, setCalendarEvents }) => {
     let newTimeFormat = eventTime + ":00";
 
     newTimeFormat = userDateInput + "T" + newTimeFormat;
-
-    console.log(eventTime);
 
     const newEvents = [...calendarEvents];
     newEvents.push({ title: eventName, start: newTimeFormat });
